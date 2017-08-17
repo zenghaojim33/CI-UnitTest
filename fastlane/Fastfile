@@ -76,9 +76,8 @@ platform :ios do
 
   # 开始打包
   match(clone_branch_directly:true,
-       type: “development”)
-  cert
-  sigh
+       type: “development”,
+	app_identifier: “com.zoeker.cn.CI”)
   gym(
   scheme: “CI”,
   # 是否清空以前的编译信息 true：是

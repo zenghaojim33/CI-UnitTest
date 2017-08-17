@@ -76,7 +76,7 @@ platform :ios do
 
   # 开始打包
   match(clone_branch_directly:true,
-       type: "adhoc")
+       type: “development”)
   sigh
   gym(
   scheme: “CI”,

@@ -78,7 +78,7 @@ platform :ios do
   match(clone_branch_directly:true)
   sigh
   gym(
-  scheme: "JenkinsFastlaneExample",
+  scheme: “CI”,
   # 是否清空以前的编译信息 true：是
   clean:true,
   # 指定打包方式，Release 或者 Debug

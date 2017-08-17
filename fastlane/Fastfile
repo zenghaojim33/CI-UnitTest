@@ -52,16 +52,16 @@ platform :ios do
   after_all do |lane|
     # This block is called, only if the executed lane was successful
 
-     slack(
-       message: "Successfully deployed new App Update."
-     )
+     #slack(
+     #  message: "Successfully deployed new App Update."
+     #)
   end
 
   error do |lane, exception|
-    # slack(
-    #   message: exception.message,
-    #   success: false
-    # )
+     slack(
+       message: exception.message,
+       success: false
+     )
   end
 
   lane :ci do|options|
@@ -94,8 +94,8 @@ platform :ios do
 
   # 请将-T后的数字更改为在fir申请的APIToken
   sh "fir publish ./build/CI.ipa -T ef97f17273539fbaa20df5404e2a2a53"
-  crashlytics(api_token: "cf8ffc1924bd7a87dc17f0ca5757b2aa15ef0220",
-              build_secret: "ff855e8a04d72908914edca570f79bd91de87ba728f441222f7c17038e185af0")
+  #crashlytics(api_token: "cf8ffc1924bd7a87dc17f0ca5757b2aa15ef0220",
+   #           build_secret:  #”ff855e8a04d72908914edca570f79bd91de87ba728f441222f7c17038e185af0")
 
   scan(  
   slack_channel: “zoeker”,

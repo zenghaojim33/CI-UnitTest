@@ -14,6 +14,8 @@
 		1559272A1F4571BF00F9CCE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155927281F4571BF00F9CCE3 /* LaunchScreen.storyboard */; };
 		155927351F4571BF00F9CCE3 /* CITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155927341F4571BF00F9CCE3 /* CITests.swift */; };
 		155927401F4571BF00F9CCE3 /* CIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559273F1F4571BF00F9CCE3 /* CIUITests.swift */; };
+		155927501F45A9B500F9CCE3 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1559274E1F45A9B500F9CCE3 /* Fabric.framework */; };
+		155927511F45A9B500F9CCE3 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1559274F1F45A9B500F9CCE3 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		1559273B1F4571BF00F9CCE3 /* CIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1559273F1F4571BF00F9CCE3 /* CIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIUITests.swift; sourceTree = "<group>"; };
 		155927411F4571BF00F9CCE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1559274E1F45A9B500F9CCE3 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		1559274F1F45A9B500F9CCE3 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				155927511F45A9B500F9CCE3 /* Crashlytics.framework in Frameworks */,
+				155927501F45A9B500F9CCE3 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,8 @@
 				155927331F4571BF00F9CCE3 /* CITests */,
 				1559273E1F4571BF00F9CCE3 /* CIUITests */,
 				1559271D1F4571BF00F9CCE3 /* Products */,
+				1559274E1F45A9B500F9CCE3 /* Fabric.framework */,
+				1559274F1F45A9B500F9CCE3 /* Crashlytics.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +143,7 @@
 				155927181F4571BF00F9CCE3 /* Sources */,
 				155927191F4571BF00F9CCE3 /* Frameworks */,
 				1559271A1F4571BF00F9CCE3 /* Resources */,
+				1559274D1F45A97200F9CCE3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -256,6 +265,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1559274D1F45A97200F9CCE3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run cf8ffc1924bd7a87dc17f0ca5757b2aa15ef0220 ff855e8a04d72908914edca570f79bd91de87ba728f441222f7c17038e185af0";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		155927181F4571BF00F9CCE3 /* Sources */ = {
@@ -418,6 +443,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1.0.08171550;
 				DEVELOPMENT_TEAM = 8CEJM5B88V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zoeker.cn.CI;
@@ -435,6 +464,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CURRENT_PROJECT_VERSION = 1.0.08171550;
 				DEVELOPMENT_TEAM = 8CEJM5B88V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zoeker.cn.CI;

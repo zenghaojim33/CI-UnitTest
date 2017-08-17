@@ -77,6 +77,8 @@ platform :ios do
   # 开始打包
   match(clone_branch_directly:true,
        type: “development”)
+  disable_automatic_code_signing(path: “CI.xcodeproj")
+  cert
   sigh
   gym(
   scheme: “CI”,
@@ -87,6 +89,7 @@ platform :ios do
   # 指定打包所使用的输出方式，目前支持app-store, package, ad-hoc, enterprise, development
   # export_method:”development”,
   # 指定输出文件夹
+  enable_automatic_code_signing(path: “CI.xcodeproj")
   output_directory:"./fastlane/build",
   )
 

@@ -96,6 +96,12 @@ platform :ios do
   sh "fir publish ./build/CI.ipa -T ef97f17273539fbaa20df5404e2a2a53"
   crashlytics(api_token: "cf8ffc1924bd7a87dc17f0ca5757b2aa15ef0220",
               build_secret: "ff855e8a04d72908914edca570f79bd91de87ba728f441222f7c17038e185af0")
+
+  scan(  
+  slack_channel: “zoeker”,
+  slack_message: “自动化构建&测试报告:#{ENV["SCAN_OUTPUT_DIRECTORY"]}",
+  slack_only_on_failure: false
+  )
   end
 end
 

@@ -83,9 +83,9 @@ platform :ios do
   # 是否清空以前的编译信息 true：是
   clean:true,
   # 指定打包方式，Release 或者 Debug
-  configuration:”Debug”,
+  #configuration:”Debug”,
   # 指定打包所使用的输出方式，目前支持app-store, package, ad-hoc, enterprise, development
-  export_method:”development”,
+  # export_method:”development”,
   # 指定输出文件夹
   output_directory:"./fastlane/build",
   )

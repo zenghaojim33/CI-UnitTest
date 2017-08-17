@@ -94,7 +94,8 @@ platform :ios do
 
   # 请将-T后的数字更改为在fir申请的APIToken
   sh "fir publish ./build/CI.ipa -T 24bb65b2fce3ecca8740b918a67e0ed8"
-
+  crashlytics(api_token: "[cf8ffc1924bd7a87dc17f0ca5757b2aa15ef0220]",
+              build_secret: "[ff855e8a04d72908914edca570f79bd91de87ba728f441222f7c17038e185af0]")
   end
 end
 

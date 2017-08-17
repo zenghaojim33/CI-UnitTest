@@ -75,7 +75,8 @@ platform :ios do
   increment_build_number(build_number: build_no)
 
   # 开始打包
-  match(clone_branch_directly:true)
+  match(clone_branch_directly:true,
+       type: "adhoc")
   sigh
   gym(
   scheme: “CI”,

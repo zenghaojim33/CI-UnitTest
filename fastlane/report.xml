@@ -5,42 +5,42 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.001106">
+      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.001152">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.00083">
+      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.000911">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: get_version_number" time="0.73282">
+      <testcase classname="fastlane.lanes" name="2: get_version_number" time="0.74417">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: increment_build_number" time="2.120534">
+      <testcase classname="fastlane.lanes" name="3: increment_build_number" time="2.115244">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: match" time="24.978371">
+      <testcase classname="fastlane.lanes" name="4: match" time="28.970595">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: sigh" time="20.456923">
+      <testcase classname="fastlane.lanes" name="5: sigh" time="61.205336">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="6: gym" time="34.771315">
+      <testcase classname="fastlane.lanes" name="6: gym" time="19.286679">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="7: fir publish ./build/CI.ipa -T 24bb65b2fce3ecca8740b918a67e0ed8" time="31.825211">
+      <testcase classname="fastlane.lanes" name="7: fir publish ./build/CI.ipa -T 24bb65b2fce3ecca8740b918a67e0ed8" time="2.155072">
         
       </testcase>
     

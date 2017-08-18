@@ -91,6 +91,7 @@ platform :ios do
   )
 
   scan(  
+  devices: ["iPhone 6s"]
   slack_channel: “zoeker”,
   slack_message: “自动化构建&测试报告:#{ENV["SCAN_OUTPUT_DIRECTORY"]}",
   slack_only_on_failure: false

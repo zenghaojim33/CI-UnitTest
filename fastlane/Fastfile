@@ -91,7 +91,7 @@ platform :ios do
   )
 
   scan(  
-
+  custom_report_file_name: ”report.xml”,
   code_coverage: true,
   slack_channel: “zoeker”,
   slack_message: “自动化构建&测试报告:#{ENV["SCAN_OUTPUT_DIRECTORY"]}",

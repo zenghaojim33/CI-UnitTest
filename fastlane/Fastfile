@@ -91,7 +91,7 @@ platform :ios do
   )
 
   scan(  
-  output_files: ”TEST-report”,
+  output_files: ”report.xml”,
   output_types: “junit”,
   code_coverage: true,
   slack_channel: “zoeker”,

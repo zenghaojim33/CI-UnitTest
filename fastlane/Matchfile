@@ -1,4 +1,4 @@
-git_url "https://github.com/zenghaojim33/Zoeker-Cert.git"
+git_url "git@github.com:zenghaojim33/Zoeker-Cert.git"
 
 type "development" # The default type, can be: appstore, adhoc, enterprise or development
 
